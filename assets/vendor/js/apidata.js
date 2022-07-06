@@ -88,7 +88,7 @@ const enter_data = (data) => {
 
 const F_userGithub = async() => {
     const user = document.getElementById('usergithub').value;
-    const url = `http://api.github.com/users/${user}`;
+    const url = `https://api.github.com/users/${user}`;
     const promise_data = await fetch(url);
     const data = await promise_data.json();
 
